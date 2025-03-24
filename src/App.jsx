@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import QuestionPage from "./pages/QuestionPage";
 import ScorePage from "./pages/ScorePage";
@@ -15,13 +15,13 @@ const questions = [
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/question" element={<QuestionPage questions={questions} />} />
         <Route path="/score" element={<ScorePage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
