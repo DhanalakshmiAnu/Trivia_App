@@ -3,7 +3,7 @@ import LoginPage from "./pages/LoginPage";
 import QuestionPage from "./pages/QuestionPage";
 import ScorePage from "./pages/ScorePage";
 import './styles.css';
-<img src="/background.jpg" alt="Background" />
+
 
 const questions = [
   { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Lisbon"], answer: 2 },
